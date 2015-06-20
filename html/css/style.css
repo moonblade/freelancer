@@ -79,7 +79,7 @@ a {
 
 #navButtons li:hover,
 #logo a:hover {
-    background: #e67e22;
+    background: #e74c3c;
 }
 
 #mainTag {
@@ -276,4 +276,61 @@ div.box .button {
 
 .linkedin:hover {
     background: #007bb6;
+}
+
+#port-content {
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 40px;
+    width: 950px;
+    height: 1200px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.item-copy {
+    width: 500px;
+    float: left;
+    margin-right: 46px;
+}
+
+.port-item-b {
+    height: 230px;
+    width: 870px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.item-copy-b {
+    width: 500px;
+    float: right;
+}
+
+.item-thumb-b {
+    float: left;
+    margin-top: 10px;
+}
+
+.item-thumb-b img{
+    padding-top: 16px;
+}
+
+.port-action img{
+    padding-right: 7px;
+}
+
+.item-thumb {
+    float: left;
+    margin-top: 10px;
+}
+
+.item-thumb img{
+    padding-top: 16px;
+    padding-left: 19px;
+}
+
+.port-action-a, .port-action-a {
+    
 }

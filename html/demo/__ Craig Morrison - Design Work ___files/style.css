@@ -1,0 +1,637 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* CSS RESET 
+
+/* v2.0 | 20110126
+  http://meyerweb.com/eric/tools/css/reset/ 
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* MY STYLES */
+
+/* *{margin:0; padding:0;} */
+
+/* Font */
+
+
+
+html, body {
+	text-align: center;
+	height: 100%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;	
+   font-size: 15px;
+	line-height: 26px;
+	color: white;
+	background-image: url(../images/darkbg.gif);
+}
+
+
+h1 {
+	padding-bottom: 13px;
+	padding-top: 13px;
+}
+
+p {
+	padding-bottom: 10px;
+}
+
+/* Grid Overlay */
+
+#grid {
+	text-align: center;
+	height: 0px;
+	opacity: 0.1;
+	overflow: visible;
+}
+
+#grunge {
+	position: absolute;
+	background-image: url(../images/bg-grunge.png);
+	width: 950px;
+	height: 348px;
+	top: 0;
+	left:50%;
+	margin-left: -475px;
+
+}
+
+
+/* Container for upper bg image and content */
+
+#container {
+	text-align: center;
+	height: auto;
+	background-image: url(../images/bg.gif);
+	overflow: visible;
+	min-width: 950px;
+}
+
+/* Container for lower content */
+
+#container2 {
+	text-align: center;
+	height: auto;
+	background-image: url(../images/darkbg.gif);
+}
+
+/* Centered DIV to hold content above sawtooth */
+
+#uppercontent {
+	width: 950px;
+	min-height: 300px;
+	margin-left: auto ;
+    margin-right: auto ;
+    position: relative;
+}
+
+#uppercontent-sub {
+	width: 950px;
+	min-height: 171px;
+	margin-left: auto ;
+    margin-right: auto ;
+    position: relative;
+}
+
+a {
+	text-decoration: none;
+	color: #f3684b;
+}
+
+a:hover {
+
+	color: white;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+/* Container for sawtooth bg image */
+
+#sawtooth {
+	height: 13px;
+	text-align: center;
+	min-width: 960px;
+	background-image: url(../images/sawtooth.gif);
+}
+
+
+
+#header {
+	height: 125px;
+	width: auto;
+	padding-top: 20px;
+	
+}
+
+#logo {
+	float: left;
+}
+
+#nav {
+	width: 390px;
+	height: auto;
+	float: right;
+	overflow: visible;
+}
+
+#nav_buttons {
+	list-style-type: none;
+	padding-left: 0px;
+	float: right;
+	}
+	
+#nav_buttons li {
+	float: left;
+	padding-left: 4px;
+	}
+
+#nav_buttons li ul { 
+	display: none; 
+	}
+	
+#nav_buttons ul li { 
+	display: block;
+	padding: 0px;
+  	text-decoration: none;
+  	text-align: left;
+  	margin-left: 0px;
+  	
+	}
+		
+#nav_buttons ul li a:hover { 
+	
+	}
+	
+#nav_buttons li:hover ul {
+  display: block;
+  position: absolute;
+}
+
+#nav_buttons li:hover li {
+  float: none;
+
+}
+	
+
+#blurb {
+	height: 188px;
+	width: auto;
+	font-family: BebasNeueRegular;
+	color: #1b1b1b;
+}
+
+#blurb-sub {
+	height: 130px;
+	width: auto;
+	font-family: BebasNeueRegular;
+	color: #1b1b1b;
+}
+
+.top1 {
+	font-size: 52.5px;	
+}
+
+/* Centered DIV to hold content below sawtooth */
+
+#content {
+	width: 950px;
+	min-height: 100px;
+	margin-left: auto ;
+    margin-right: auto ;
+
+}
+
+#featured {
+	height: 247px;
+	width: 950px;
+	padding-top: 33px;
+	padding-left: 39px;
+	
+	}
+
+.f-item {
+	height: 215px;
+	width: 215px;
+	margin-right: 10px;
+	float: left;
+	background-color: white;
+	background-image: url(../images/featured-bg.png);
+}
+
+.f-item img {
+	padding: 6px;
+}
+
+#socialfeed {
+	width: 950px;
+	height: 335px;
+	word-wrap: break-word;
+	overflow: hidden;
+	text-align: left;
+}
+
+#flickr {
+	width: 380px;
+	height: 305px;
+	float: left;
+	overflow: hidden;
+	padding-left: 39px;
+	margin-right: 60px;
+}
+
+#flickfeed {
+	width: 380px;
+	clear: both;
+	padding-top: 11px;
+}
+
+.socialtitle{
+	float: left;
+}
+
+.sociallink{
+	float: left;
+	padding-top: 2px;
+	padding-left: 8px;
+}
+
+#twitter {
+	width: 440px;
+	height: 305px;
+	float: left;
+	overflow:visible;
+}
+
+#feed {
+	height: 300px;
+	width: 430px;
+	clear: both;
+	padding-top: 11px;
+	overflow: hidden;
+}
+
+#twitter_update_list {
+	font-size: 15px;
+	font-family: Times, serif;
+	line-height: 21px;
+	list-style: none;
+	}
+	
+#twitter_update_list li {
+	background: url(../images/tweet-br.gif) bottom left repeat-x;
+	padding-bottom: 18px;
+	margin-bottom: 15px;
+	}
+	
+#twitter_update_list span  {
+	color: white;
+	text-decoration: none;
+	}
+	
+#twitter_update_list span a	{
+	color: #f1684e;
+	text-decoration: none;
+}
+
+#twitter_update_list span a:hover	{
+	color: white;
+	text-decoration: none;
+}
+
+#twitter_update_list a {
+	color: #f1684e;
+	text-decoration: none;
+	}
+	
+#twitter_update_list a:hover {
+	color: white;
+	text-decoration: none;
+	}
+
+#footer {
+	width: 950px;
+	height: 50px;
+	padding-top: 12px;
+	padding-bottom: 20px;
+
+}
+
+.break {
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+
+#left {
+	float: left;
+}
+
+#right {
+	float: right;
+}
+
+#footer-email {
+	padding-bottom: 4px;
+}
+
+#copyright {
+
+}
+
+
+#footernav {
+	list-style-type: none;
+}
+
+#footernav li {
+	float: left;
+	padding-right: 10.5px;
+	}
+	
+	
+	
+#footersocials {
+	list-style-type: none;
+}
+
+#footer-socials li {
+	float: left;
+	padding-right: 16px;
+	padding-top: 4px;
+	}	
+
+
+/* SUB PAGE STYLES */
+
+#copy{
+	width: 500px;
+	min-height: 200px;
+	float: left;
+	padding-top: 12px;
+	text-align: left;
+	margin-left: 40px;
+	padding-bottom: 15px;
+}
+
+#sidebar {
+	width: 305px;
+	float: left;
+	
+	margin-left: 62px;
+}
+
+.item {
+	padding-top: 25px;
+}
+
+#services {
+	padding-top: 2px;
+	padding-bottom: 12px;
+}
+
+#top {
+	padding-left: 25px;
+	width: 320px;
+	
+}
+
+#top li {
+	padding-top: 10px;
+	padding-bottom: 0px;
+	background: url(../images/tweet-br.gif) top left repeat-x;
+	
+}
+
+#top img{
+	float: left;
+	padding-right: 15px;
+}
+
+
+#top p {
+	padding-top: 2px;	
+}
+
+#contact-copy{
+	float: left;
+	width: 390px;
+	text-align: left;
+	padding-left: 40px;
+	padding-top: 20px;
+	margin-right: 47px;
+}
+
+#stacked-l{
+	float: left;
+	width: 190px;
+	padding-top: 33px;
+	padding-right: 48px;
+	padding-left: 0px;
+}
+
+#stacked-r{
+	float: left;
+	width: 190px;
+	padding-top: 33px;
+
+}
+
+.social img {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-decoration: none;
+	vertical-align: middle;
+	}
+
+/* CONTACT FORM STYLE */
+
+.input-zone {
+	float: left;
+}
+
+div.box {
+margin:0 auto;
+width: 395px;
+}
+
+div.box label {
+width:100%;
+float: left;
+padding-bottom: 10px;
+}
+
+div.box label span {
+display: block;
+padding-bottom: 7px;
+}
+
+div.box .input_text {
+border: solid 2px #121212;
+padding:10px 10px;
+width: 163px;
+margin-right: 10px;
+box-shadow: inset 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+
+
+}
+
+div.box .message{
+border: solid 2px #121212;
+padding:10px 10px;
+width: 363px;
+overflow:auto;
+height:88px;
+resize: none;
+box-shadow: inset 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+div.box .button
+{
+padding-top: 10px;
+}
+
+#port-content {
+	text-align: left;
+	padding-top: 15px;
+	padding-left: 40px;
+	width: 950px;
+	height: 1200px;
+}
+
+.port-item-a {
+	height: 230px;
+	width: 870px;
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	
+}
+
+.item-copy {
+	width: 588px;
+	float: left;
+	margin-right: 46px;
+}
+
+.item-thumb {
+	background-image: url(../images/port-pic-pile.png);
+	float: left;
+	height: 235px;
+	width: 235px;
+	margin-top: 10px;
+}
+
+.item-thumb img{
+	padding-top: 16px;
+	padding-left: 19px;
+}
+
+.port-item-b {
+	height: 230px;
+	width: 870px;
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	
+
+}
+
+.item-copy-b {
+	width: 588px;
+	float: left;
+	margin-left: 46px;
+}
+
+.item-thumb-b {
+	background-image: url(../images/port-pic-pile.png);
+	float: left;
+	height: 235px;
+	width: 235px;
+	margin-top: 10px;
+}
+
+.item-thumb-b img{
+	padding-top: 16px;
+	padding-left: 19px;
+}
+
+
+.port-action{
+	float: left;
+	text-align: left;
+	padding-top: 15px;
+}
+
+.port-action img{
+	padding-right: 7px;
+}
+
+.port-break {
+	background: url(../images/tweet-br.gif) bottom left repeat-x;
+	height: 2px;
+	width: 870px;
+	clear: both;
+}
+
+.bold{
+	font-weight: bold;
+
+}
+
+.twitter-timeline { 
+   background: rgba(0,0,0,0.6); 
+   }
+   
+.thm-dark {
+	background-color: black;
+}   
