@@ -1,0 +1,88 @@
+body {
+    text-align: center;
+    height: 100%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 26px;
+    color: white;
+    background-image: url(../images/darkbg.gif);
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    text-align: center;
+    height: auto;
+    background-image: url(../images/bg.gif);
+    overflow: visible;
+}
+
+#uppercontent {
+    max-width: 900px;
+    min-height: 171px;
+    margin: auto;
+}
+
+#header {
+    height: 125px;
+    width: auto;
+    padding-top: 20px;
+}
+
+#logo {
+    float: left;
+    font-size: 2em;
+    height: 28px;
+}
+
+#logo a {
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    background: #2c3e50;
+    display: block;
+    border:1px solid #95a5a6;
+}
+
+#navContainer {
+    height: auto;
+    float: right;
+    overflow: visible;
+}
+
+#navButtons {
+    margin: 0;
+    list-style-type: none;
+    padding-left: 0px;
+    float: right;
+}
+
+#navButtons li {
+    background: #2c3e50;
+    float: left;
+    padding-left: 4px;
+    margin: 0 0.1em;
+    border-radius: 0.3em;
+    border:1px solid #95a5a6;
+}
+
+#navButtons li a {
+    min-width: 70px;
+    padding: 1em;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+#navButtons li:hover,
+#logo a:hover{
+    background: #e67e22;
+}
+/*#navButtons li:hover ul {
+  display: block;
+  position: absolute;
+}
+*/
