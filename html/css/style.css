@@ -6,6 +6,7 @@ body {
     font-size: 15px;
     line-height: 26px;
     color: white;
+    margin: 0;
     background-image: url(../images/darkbg.gif);
 }
 
@@ -81,8 +82,26 @@ a {
 #logo a:hover{
     background: #e67e22;
 }
-/*#navButtons li:hover ul {
-  display: block;
-  position: absolute;
+
+#mainTag{
+    padding: 0.5em 1em;
+    text-align: justify;
 }
-*/
+
+#mainTag p{
+    line-height: 100%;
+    margin: 0;
+    font: ultra-condensed bold 30px "Arial";
+    color: #2f4356;
+}
+
+#mainTag p a{
+    color: #e74c3c;
+}
+
+#sawtooth {
+    height: 13px;
+    text-align: center;
+    min-width: 960px;
+    background-image: url(../images/sawtooth.gif);
+}
