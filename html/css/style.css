@@ -112,6 +112,7 @@ a {
     width: 950px;
     min-height: 100px;
     margin-left: auto;
+    margin-top: 50px;
     margin-right: auto;
 }
 
@@ -331,6 +332,28 @@ div.box .button {
     padding-left: 19px;
 }
 
-.port-action-a, .port-action-a {
-    
+.item-copy span, .item-copy-b span{
+    font: bold 20px "Helvetica";
 }
+.item-copy a, .item-copy-b a{
+    font: bold 25px "Helvetica";
+    color: #e74c3c;
+}
+
+.item-copy a:hover, .item-copy-b a:hover{
+    font: bold 25px "Helvetica";
+    color: #DCDCDC;
+}
+
+.head {
+    font: bold 20px "Helvetica";
+    text-align: left;
+}
+
+.para {
+    font: 15px "Helvetica";
+    text-align: left;
+    float: left;
+    padding-left: 30px;
+}
+
