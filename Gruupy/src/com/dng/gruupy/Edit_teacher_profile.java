@@ -118,8 +118,8 @@ public class Edit_teacher_profile extends Activity {
 		View decorView = getWindow().getDecorView();
 		int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
 		decorView.setSystemUiVisibility(uiOptions);
-		ActionBar actionBar = getActionBar();
-		actionBar.hide();
+//		ActionBar actionBar = getActionBar();
+//		actionBar.hide();
 		setContentView(R.layout.act_edit_tutor);
 
 		getWindow().setSoftInputMode(

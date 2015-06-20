@@ -91,8 +91,8 @@ public class Student_registration extends Activity {
 		View decorView = getWindow().getDecorView();
 		int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
 		decorView.setSystemUiVisibility(uiOptions);
-		ActionBar actionBar = getActionBar();
-		actionBar.hide();
+//		ActionBar actionBar = getActionBar();
+//		actionBar.hide();
 
 		global = (Global) getApplicationContext();
 		sp = getSharedPreferences("mprefs", Context.MODE_PRIVATE);

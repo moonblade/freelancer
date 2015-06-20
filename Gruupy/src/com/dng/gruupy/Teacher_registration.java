@@ -103,8 +103,8 @@ public class Teacher_registration extends Activity {
 		View decorView = getWindow().getDecorView();
 		int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
 		decorView.setSystemUiVisibility(uiOptions);
-		ActionBar actionBar = getActionBar();
-		actionBar.hide();
+//		ActionBar actionBar = getActionBar();
+//		actionBar.hide();
 		setContentView(R.layout.new_teacher_reg);
 		getWindow().setSoftInputMode(
 				WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE

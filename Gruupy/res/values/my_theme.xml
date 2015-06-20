@@ -5,6 +5,7 @@
 <!-- #f0daff color code of pink last color A6DFFA-->
     <style name="CustomTheme" parent="@style/Theme.AppCompat.Light">
          <item name="windowActionBar">false</item>
+    	<item name="windowNoTitle">true</item>
         <item name="android:windowNoTitle">false</item>
         <item name="android:windowBackground">@color/custom_theme_color</item>
         <item name="android:fontFamily">sans-serif</item>

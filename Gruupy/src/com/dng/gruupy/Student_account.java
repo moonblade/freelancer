@@ -88,8 +88,8 @@ public class Student_account extends Activity {
 		View decorView = getWindow().getDecorView();
 		int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
 		decorView.setSystemUiVisibility(uiOptions);
-		ActionBar actionBar = getActionBar();
-		actionBar.hide();
+//		ActionBar actionBar = getActionBar();
+//		actionBar.hide();
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.act_student_profile);
 
