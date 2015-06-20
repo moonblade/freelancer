@@ -357,3 +357,14 @@ div.box .button {
     padding-left: 30px;
 }
 
+#links {
+    margin-top: 10px;
+    text-align: center;
+}
+#links a{
+    font: 16px "Helvetica";
+    color: #DCDCDC;
+    background: black;
+    text-align: left;
+    padding: 10px 5px;
+}
