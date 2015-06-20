@@ -368,7 +368,7 @@ public class RegistrationActivity extends Activity {
 			ResponseHandler<String> respo_handler = new BasicResponseHandler();
 			// country_name,country_code,phone_no
 			HttpPost httppost = new HttpPost(
-					"http://andriodiosdevelopers.com/groupy/country-mobile-code.php");
+					Global_Constants.BASE_URL + "country-mobile-code.php");
 			try {
 				// Execute HTTP Post Request
 				output = httpclient.execute(httppost, respo_handler);

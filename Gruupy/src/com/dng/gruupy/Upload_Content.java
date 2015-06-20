@@ -72,7 +72,7 @@ public class Upload_Content extends Activity {
 	static String Topic = "";
 	RelativeLayout view_videos;
 	String Repos = "";
-	String fetch_comments_url = "http://andriodiosdevelopers.com/groupy/get_comments.php";
+	String fetch_comments_url = Global_Constants.BASE_URL + "get_comments.php";
 			
 	ArrayList<String> comments_list = new ArrayList<String>();
 	TextView txtPercentage;

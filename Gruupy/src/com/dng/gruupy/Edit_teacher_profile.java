@@ -77,8 +77,8 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 public class Edit_teacher_profile extends Activity {
 
 	ImageView profile_image;
-	public static String get_teach_acc_url = "http://andriodiosdevelopers.com/groupy/teacher_profile.php";
-	String edit_teacher_profile = "http://andriodiosdevelopers.com/groupy/edit_teacher_profile.php";
+	public static String get_teach_acc_url = Global_Constants.BASE_URL + "teacher_profile.php";
+	String edit_teacher_profile = Global_Constants.BASE_URL + "edit_teacher_profile.php";
 	RadioGroup gender_group, qual_group, exp_group, teaching_lvl_group;
 	RadioButton radioSexButton, radioExpButton, fresh, middle, expert;
 	CheckBox degree, certificate, others, junio, senio, uni, other_lev;
@@ -323,7 +323,7 @@ public class Edit_teacher_profile extends Activity {
 				.permitAll().build();
 		StrictMode.setThreadPolicy(policy);
 
-		String default_url = "http://andriodiosdevelopers.com/groupy/uploads/female140.jpeg";
+		String default_url = Global_Constants.BASE_URL + "uploads/female140.jpeg";
 		DownloadFromUrl(default_url, "female140.png");
 		selectedPath = file.getPath();
 		pro_image = executeMultipartPost(selectedPath);

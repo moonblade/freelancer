@@ -117,7 +117,7 @@ public class Student_registration extends Activity {
 		Get_location get_loc=new Get_location();
 		get_loc.execute();
 		
-		String default_url = "http://andriodiosdevelopers.com/groupy/uploads/female140.png";
+		String default_url = Global_Constants.BASE_URL + "uploads/female140.png";
 		DownloadFromUrl(default_url, "female140.png");
 		selectedPath = file.getPath();
 		pro_image = executeMultipartPost(selectedPath);
@@ -350,7 +350,7 @@ public class Student_registration extends Activity {
 			DefaultHttpClient dhcp = new DefaultHttpClient();
 			ResponseHandler<String> respo_string = new BasicResponseHandler();
 			HttpPost post = new HttpPost(
-					"http://andriodiosdevelopers.com/groupy/find_location.php?lat_long="
+					Global_Constants.BASE_URL + "find_location.php?lat_long="
 							+ global.getLat_long());
 
 			try {
@@ -471,7 +471,7 @@ public class Student_registration extends Activity {
 				System.out
 						.println("USerName--" + username.getText().toString());
 				if(pro_image.equals(null)){
-					String default_url = "http://andriodiosdevelopers.com/groupy/uploads/female140.png";
+					String default_url = Global_Constants.BASE_URL + "uploads/female140.png";
 					DownloadFromUrl(default_url, "female140.png");
 					selectedPath = file.getPath();
 					pro_image = executeMultipartPost(selectedPath);

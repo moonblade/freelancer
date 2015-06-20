@@ -228,7 +228,7 @@ public class AddGroup extends Activity {
 			ResponseHandler<String> respo_string = new BasicResponseHandler();
 			Log.e("Lat long","long lat"+global.getLat_long());
 			HttpPost post = new HttpPost(
-					"http://andriodiosdevelopers.com/groupy/find_location.php?lat_long="
+					Global_Constants.BASE_URL + "find_location.php?lat_long="
 							+ global.getLat_long());
 
 			try {

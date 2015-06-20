@@ -510,7 +510,7 @@ public class ProfilePicActivity extends Activity {
 			DefaultHttpClient dhcp = new DefaultHttpClient();
 			ResponseHandler<String> respo_string = new BasicResponseHandler();
 			HttpPost post = new HttpPost(
-					"http://andriodiosdevelopers.com/groupy/find_location.php?lat_long="
+					Global_Constants.BASE_URL + "find_location.php?lat_long="
 							+ global.getLat_long());
 
 			try {

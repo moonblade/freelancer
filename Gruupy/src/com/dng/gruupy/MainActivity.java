@@ -57,7 +57,7 @@ public class MainActivity extends ActionBarActivity implements
 	Button agree, cancel;
 	ImageView groups, channels, active_chats;
 	static final int REQUEST_CODE_RECOVER_PLAY_SERVICES = 1001;
-	static final String login_url = "http://andriodiosdevelopers.com/groupy/login.php";
+	static final String login_url = Global_Constants.BASE_URL + "login.php";
 	SharedPreferences pref;
 	private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 1000;
 

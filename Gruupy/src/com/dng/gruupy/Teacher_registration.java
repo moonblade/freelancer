@@ -318,7 +318,7 @@ public class Teacher_registration extends Activity {
 				.permitAll().build();
 		StrictMode.setThreadPolicy(policy);
 
-		String default_url = "http://andriodiosdevelopers.com/groupy/uploads/female140.jpeg";
+		String default_url = Global_Constants.BASE_URL + "female140.jpeg";
 		DownloadFromUrl(default_url, "female140.png");
 		selectedPath = file.getPath();
 		pro_image = executeMultipartPost(selectedPath);

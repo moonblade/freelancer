@@ -61,8 +61,8 @@ import com.squareup.picasso.Picasso;
 public class Student_account extends Activity {
 
 	EditText uname, grade,username, school, Username, email;
-	String get_stu_acc_url = "http://andriodiosdevelopers.com/groupy/student_profile.php";
-	String edit_stu_Acc = "http://andriodiosdevelopers.com/groupy/edit_student_profile.php";
+	String get_stu_acc_url = Global_Constants.BASE_URL + "student_profile.php";
+	String edit_stu_Acc = Global_Constants.BASE_URL + "edit_student_profile.php";
 
 	SharedPreferences pref;
 	Global global;
@@ -113,7 +113,7 @@ public class Student_account extends Activity {
 				.permitAll().build();
 		StrictMode.setThreadPolicy(policy);
 
-		String default_url = "http://andriodiosdevelopers.com/groupy/uploads/female140.jpeg";
+		String default_url = Global_Constants.BASE_URL + "uploads/female140.jpeg";
 		DownloadFromUrl(default_url, "female140.jpeg");
 		selectedPath = file.getPath();
 		pro_image = executeMultipartPost(selectedPath);

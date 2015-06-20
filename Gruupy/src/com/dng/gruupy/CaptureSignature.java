@@ -108,9 +108,9 @@ public class CaptureSignature extends Activity {
 	ListView L1;
 	String[] more_options = { "Back to Tuition", "Listen to Speech",
 			"Send as Speech", "Play Lesson" };
-	public static String Close_chapter_url = "http://andriodiosdevelopers.com/groupy/close_chapter.php";
-	public static String online_url = "http://andriodiosdevelopers.com/groupy/online_users.php";
-	public static String resume_url = "http://andriodiosdevelopers.com/groupy/resume.php";
+	public static String Close_chapter_url = Global_Constants.BASE_URL + "close_chapter.php";
+	public static String online_url = Global_Constants.BASE_URL + "online_users.php";
+	public static String resume_url = Global_Constants.BASE_URL + "resume.php";
 	public int count = 1;
 	public String current = null;
 	String msg_resp, responseString = "";
@@ -206,9 +206,9 @@ public class CaptureSignature extends Activity {
 	private Bitmap thumb;
 	String resp_msg = "";
 	String faqs_url = Global_Constants.BASE_URL + "post_comments.php";
-	String fetch_comments_url = "http://andriodiosdevelopers.com/groupy/get_comments.php";
-	String fetch_lesson_detail_url = "http://andriodiosdevelopers.com/groupy/syllabus.php";
-	String save_topic_url = "http://andriodiosdevelopers.com/groupy/user_syllabus.php";
+	String fetch_comments_url = Global_Constants.BASE_URL + "get_comments.php";
+	String fetch_lesson_detail_url = Global_Constants.BASE_URL + "syllabus.php";
+	String save_topic_url = Global_Constants.BASE_URL + "user_syllabus.php";
 	static int check_chapter = 0;
 	int index = 0;
 	ProgressBar progressBar;
