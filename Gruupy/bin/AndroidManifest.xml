@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dng.gruupy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.dng.gruupy.Global"
+        android:allowBackup="true"
+        android:icon="@drawable/tlogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.Holo.NoActionBar"
+        
+         >
+        <activity
+            android:name="com.dng.gruupy.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name=".CaptureSignature" >
+        </activity>
+        <activity
+            android:name=".Teacher_registration"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".Student_registration"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".My_channels"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity android:name=".Uploaded_listing" >
+        </activity>
+        <activity
+            android:name=".Edit_teacher_profile"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.dng.gruupy.Student_account"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity android:name=".Sample_maths" >
+        </activity>
+        <activity android:name=".All_chapters" >
+        </activity>
+        <activity
+            android:name=".Privileges"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ChatMain"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".AddGroup"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity android:name=".pdf_listing" >
+        </activity>
+        <activity android:name=".Pdf_view" >
+        </activity>
+        <activity android:name=".Basegroup" >
+        </activity>
+        <activity
+            android:name=".Chat"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        
+        <activity
+            android:name=".ShowAllGroup"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+       
+        <activity android:name=".Second" >
+        </activity>
+        <activity android:name=".Upload_Content" >
+        </activity>
+
+        <receiver android:name="com.dng.gruupy.Service_reciever" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

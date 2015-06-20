@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/uwhite_bar"/> -->
+    <!-- <item android:id="@android:id/secondaryProgress">
+        <scale
+            android:drawable="@drawable/example"
+            android:scaleWidth="100%" />
+    </item> -->
+    <item android:id="@android:id/progress">
+        <scale
+            android:drawable="@drawable/bar1"
+            android:scaleWidth="100%" />
+    </item>
+
+</layer-list>

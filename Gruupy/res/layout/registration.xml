@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="55" >
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.0"
+        android:background="#fff" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/tlogo" />
+
+        <TextView
+            android:id="@+id/title_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Verify your Number"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/title_app"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40.0"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="40.0" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10.0" >
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="16dp"
+                android:background="#FF7F00"
+                android:padding="8dp"
+                android:text="Enter your country code and phone number and you will receive a missed call verifying your number."
+                android:textColor="#ffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="10.0" >
+
+            <Spinner
+                android:id="@+id/spinner_countryname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/phone_number"
+                android:popupBackground="#ffff" />
+
+            <TextView
+                android:id="@+id/phn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#FF7F00"
+                android:visibility="gone"
+                android:padding="8dp"
+                android:text="please confirm your country code and enter your phone number."
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rl3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="25.0"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <EditText
+                android:id="@+id/edit_countrycode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0"
+                android:background="@drawable/code"
+                android:gravity="center"
+                android:text="+"
+                android:maxLength="4"
+                android:inputType="number"
+                android:textColor="#ffff" />
+
+            <EditText
+                android:id="@+id/edit_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="5.0"
+                android:background="@drawable/phone_number"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Phone number"
+                android:inputType="number"
+                android:textColorHint="#ffff" />
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2.0"
+                android:background="#FF7F00"
+                android:text="Done"
+                android:textColor="#000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

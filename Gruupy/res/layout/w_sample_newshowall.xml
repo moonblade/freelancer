@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/act_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff" >
+
+        <ImageView
+            android:id="@+id/logo_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/tlogo" />
+
+        <TextView
+            android:id="@+id/group_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="ALL CHANNELS"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/btn_options"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/option" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:weightSum="5.5" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="5.5"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:weightSum="7" >
+
+            <LinearLayout
+                android:id="@+id/findlay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.4"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:weightSum="5" >
+
+                <TextView
+                    android:id="@+id/fin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1.2"
+                    android:text="Keyword: "
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/find"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3.8"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="Enter keywords here"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/findlay1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.4"
+                android:orientation="horizontal"
+                android:weightSum="5" >
+
+                <TextView
+                    android:id="@+id/fin1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                     android:gravity="bottom|left"
+                    android:layout_weight="1.2"
+                    android:text="Channel "
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/findw"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3.8"
+                    android:focusableInTouchMode="true"
+                    android:gravity="bottom"
+                    android:hint="e.g.120"
+                    android:padding="3dp"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/findserach"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="4.2"
+                android:orientation="vertical"
+                android:weightSum="5.5" >
+
+                <LinearLayout
+                    android:id="@+id/search_range"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:weightSum="5" >
+
+                    <TextView
+                        android:id="@+id/from"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1.2"
+                        android:gravity="center_vertical"
+                        android:text="Within"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.8" >
+
+                        <EditText
+                            android:id="@+id/max_range"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="8dp"
+                            android:gravity="left"
+                            android:hint="100 Km"
+                            android:inputType="number"
+                            android:padding="3dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.0" >
+
+                    <TextView
+                        android:id="@+id/min_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="1"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/max_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:text="100"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <SeekBar
+                        android:id="@+id/search_seek"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/min_val"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:maxHeight="3dp"
+                        android:maxWidth="3dp"
+                        android:minHeight="2dp"
+                        android:minWidth="1dp"
+                        android:progress="1"
+                        android:thumb="@drawable/roundthumb_new"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5" >
+
+                    <TextView
+                        android:id="@+id/close_bttn"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="Close"
+                        android:background="@android:color/transparent"
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/srch_bttn"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:text="Search"
+                        android:textColor="#000"
+                        android:textSize="18sp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--
+             <Button
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="Done"
+            android:textColor="#ffff"
+            android:visibility="visible" />
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/no_groupfound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="No Group Found"
+            android:textColor="#ff0000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/list_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

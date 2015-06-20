@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a6dff9" >
+
+    <ScrollView
+        android:id="@+id/main_Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#11b3f0" >
+
+                <TextView
+                    android:id="@+id/name_grp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="55dp"
+                    android:layout_toLeftOf="@+id/ttle_icon"
+                    android:text="Maths"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ttle_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/roundicon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lesson_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_margin="8dp"
+                android:background="#EAEBEC"
+                android:padding="8dp" >
+
+                <TextView
+                    android:id="@+id/lesson_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lesson-21 Quadratic Formula" />
+
+                <TextView
+                    android:id="@+id/lesson_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="1-Jan-2015" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lesson_details"
+                android:layout_margin="3dp" >
+
+                <TextView
+                    android:id="@+id/content_lesson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#EAEBEC"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:text="Write to Pdf"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/content_lesson"
+                    android:layout_margin="5dp"
+                    android:background="#EAEBEC"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="Consider the formula above.The -B terms,the denominator" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/notes"
+                    android:layout_alignRight="@+id/notes"
+                    android:text="Slide 45-1"
+                    android:textColor="#C30000" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

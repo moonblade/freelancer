@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.dng.gruupy.MainActivity" >
+    <item
+        android:id="@+id/action_group"
+        android:orderInCategory="100"
+        android:title="All Groups"
+        android:showAsAction="ifRoom|withText"/>
+ <!--  <item
+        android:id="@+id/menu_help"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_help"/> -->
+</menu>

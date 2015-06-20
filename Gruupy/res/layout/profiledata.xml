@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="7" >
+
+    <LinearLayout
+        android:id="@+id/one_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/profile_pic" />
+
+        <LinearLayout
+            android:id="@+id/name_lay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/proceed"
+                android:background="#fff"
+                android:ems="10"
+                android:hint="Enter name"
+                android:inputType="textPersonName"
+                android:textColor="#000" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:hint="loading location..." />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="3.7" >
+
+        <RadioGroup
+            android:id="@+id/grouped_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/gender1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_name"
+                android:layout_margin="10dp"
+                android:checked="true"
+                android:text="Male"
+                android:textColor="#000" />
+
+            <RadioButton
+                android:id="@+id/gender2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_name"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="Female"
+                android:textColor="#000" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/age_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grouped_buttons"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/age_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age(optional)"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/age_tv"
+                android:layout_below="@+id/grouped_buttons"
+                android:layout_toRightOf="@+id/age_tv"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:background="@android:color/transparent"
+                android:hint="18"
+                android:padding="5dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/age_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/ppl_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allow people to find me"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rad_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:checked="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/statuslay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/find"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My status"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/status_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/status"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:hint="Welcome to doubletick"
+                android:padding="6dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/rl"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="0.8" >
+
+        <Button
+            android:id="@+id/btn_proceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Proceed"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="16sp"
+            android:background="#e9157c"
+            android:textColor="#000" />
+    </RelativeLayout>
+
+</LinearLayout>

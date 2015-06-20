@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="left" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rec_wassappp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/rname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="20sp"
+                    android:text="Anu" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="80dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="25dp"
+                    android:background="#BDBDBD" >
+                </View>
+
+                <TextView
+                    android:id="@+id/TextView001"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="right"
+                    android:textSize="15sp"
+                    android:padding="3dp" />
+
+                <TextView
+                    android:id="@+id/rtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="3dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:text="11:14"
+                    android:textColor="#FF0000"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" >
+        </View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_sender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="10" >
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" >
+        </View>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="right" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/send_wasapp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/sname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Rashid" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="80dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="20dp"
+                    android:background="#BDBDBD" >
+                </View>
+
+                <TextView
+                    android:id="@+id/chat_msga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:textSize="15sp"
+                    android:paddingRight="6dp" />
+
+                <TextView
+                    android:id="@+id/stime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="3dp"
+                    android:text="11:14"
+                    android:textColor="#FF0000"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

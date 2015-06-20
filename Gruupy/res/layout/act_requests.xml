@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a6dff9" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#11b3f0" >
+
+        <TextView
+            android:id="@+id/name_grp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="55dp"
+            android:layout_toLeftOf="@+id/ttle_icon"
+            android:text="Maths"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ttle_icon"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/roundicon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/roulette"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_height="match_parent" >
+        
+        
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/re_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="80dp"
+        android:text="Re-explain"
+        android:layout_toRightOf="@+id/roulette"
+        android:background="@drawable/signleft" />
+
+</RelativeLayout>

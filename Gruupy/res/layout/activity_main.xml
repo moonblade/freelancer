@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.salentro.whatsapp.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/action_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/options"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/option" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/header_text"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/center_lay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        android:layout_weight="4">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:paddingLeft="25dp"
+            android:layout_alignParentTop="true"
+            android:paddingRight="25dp"
+            android:src="@drawable/logo2_new" />
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/logo"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/caption_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_divider"
+            android:gravity="center_horizontal"
+            android:text="Making Smart People-Smarter"
+            android:textColor="#000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/cont_bttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Continue"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/canc_bttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cont_bttn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Cancel"
+            android:textSize="16sp"
+            android:visibility="gone" />
+		<LinearLayout android:layout_height="wrap_content"
+		    android:layout_width="match_parent"
+		    android:orientation="horizontal"
+		    android:weightSum="3">
+        <ImageView
+            android:id="@+id/act_chats"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:background="@drawable/group_new"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="bottom"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/my_groups"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:background="@drawable/chats_new"
+             android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="bottom"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/my_channels"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/channel_new"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="1dp"
+            android:padding="3dp"
+            android:layout_gravity="bottom"
+            android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

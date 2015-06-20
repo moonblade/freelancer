@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="custom_theme_color">#FFFFFF</color>
+<!-- #f0daff color code of pink last color A6DFFA-->
+    <style name="CustomTheme" parent="@style/Theme.AppCompat.Light">
+         <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowBackground">@color/custom_theme_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:colorBackground">@color/custom_theme_color</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+</resources>

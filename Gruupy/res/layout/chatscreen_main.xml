@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img_contact"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/text_lastmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_contact"
+        android:layout_alignRight="@+id/text_phone"
+        android:text="Small Text"
+        android:textColor="#ffff"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/text_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_lastmsg"
+        android:layout_marginLeft="38dp"
+        android:layout_toRightOf="@+id/img_contact"
+        android:text="Small Text"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

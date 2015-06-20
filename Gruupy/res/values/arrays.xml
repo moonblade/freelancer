@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Grades">
+        <item>Grade-6</item>
+        <item>Grade-7</item>
+        <item>Grade-8</item>
+        <item>Grade-9</item>
+        <item>Grade-10</item>
+        <item>Grade-11</item>
+        <item>Grade-12</item>
+    </string-array>
+    <string-array name="Subjects">
+        <item>English</item>
+        <item>Maths</item>
+        <item>Biology</item>
+        <item >Finance</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Social studies</item>
+    </string-array>
+
+</resources>
