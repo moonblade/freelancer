@@ -41,11 +41,10 @@ a {
 
 #logo a {
     color: white;
-    padding: 0.5em;
-    border-radius: 0.2em;
-    background: #2c3e50;
+    padding: 0.75em;
+    background: #292929;
     display: block;
-    border:1px solid #95a5a6;
+    border: 1px solid #95a5a6;
 }
 
 #navContainer {
@@ -62,15 +61,15 @@ a {
 }
 
 #navButtons li {
-    background: #2c3e50;
+    background: #292929;
     float: left;
     padding-left: 4px;
     margin: 0 0.1em;
-    border-radius: 0.3em;
-    border:1px solid #95a5a6;
+    border: 1px solid #95a5a6;
 }
 
 #navButtons li a {
+    font: 20px georgia;
     min-width: 70px;
     padding: 1em;
     color: #fff;
@@ -79,23 +78,23 @@ a {
 }
 
 #navButtons li:hover,
-#logo a:hover{
+#logo a:hover {
     background: #e67e22;
 }
 
-#mainTag{
-    padding: 0.5em 1em;
+#mainTag {
+    padding: 0.5em 1em 1.5em;
     text-align: justify;
 }
 
-#mainTag p{
+#mainTag p {
     line-height: 100%;
     margin: 0;
-    font: ultra-condensed bold 30px "Arial";
-    color: #2f4356;
+    font: ultra-condensed bold 30px "Helvetica";
+    color: #000;
 }
 
-#mainTag p a{
+#mainTag p span {
     color: #e74c3c;
 }
 
@@ -104,4 +103,177 @@ a {
     text-align: center;
     min-width: 960px;
     background-image: url(../images/sawtooth.gif);
+}
+
+#container2 {
+    text-align: center;
+    height: auto;
+    background-image: url(../images/darkbg.gif);
+    width: 950px;
+    min-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#story {
+    width: 500px;
+    min-height: 200px;
+    float: left;
+    padding-top: 12px;
+    text-align: left;
+    margin-left: 40px;
+    padding-bottom: 15px;
+}
+
+#picture {
+    width: 305px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 62px;
+}
+
+#break {
+    padding: 0;
+    margin: 0;
+    clear: both;
+}
+
+#footer {
+    width: 950px;
+    height: 50px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+}
+
+#left ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+#left li {
+    float: left;
+    padding-right: 16px;
+    /*padding-top: 4px;*/
+}
+
+#left li a {
+    display: block;
+    color: #DCDCDC;
+    text-decoration: none;
+    font: bold 20px "Roboto";
+}
+
+#left li a:hover {
+    color: #e74c3c;
+}
+
+#right a {
+    font: bold 20px "Roboto";
+    color: #DCDCDC;
+}
+
+#right a span,
+#right a:hover {
+    color: #e74c3c;
+}
+
+#contact {
+    float: right;
+    width: 390px;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 20px;
+    margin-right: 47px;
+}
+
+.input-zonel {
+    float: left;
+    width: 40%;
+}
+
+.input-zoner {
+    float: right;
+    width: 40%;
+}
+
+#address {
+    padding-top: 25px;
+    float: left;
+}
+
+#address p {
+    font-size: 30px;
+}
+
+div.box {
+    margin: 0 auto;
+    width: 395px;
+}
+
+div.box label {
+    width: 100%;
+    float: left;
+    padding-bottom: 10px;
+}
+
+div.box label span {
+    display: block;
+    padding-bottom: 7px;
+}
+
+div.box .input_text {
+    border: solid 2px #121212;
+    padding: 10px 10px;
+    width: 163px;
+    margin-right: 10px;
+    box-shadow: inset 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+div.box .message {
+    clear: both;
+    border: solid 2px #121212;
+    padding: 10px 10px;
+    width: 100%;
+    overflow: auto;
+    height: 88px;
+    resize: none;
+    box-shadow: inset 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+div.box .button {
+    padding-top: 1px;
+    text-shadow: 1px 1px 3px #666666;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    font-family: Georgia;
+    color: #ffffff;
+    background: none;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.socialIcon {
+    width: 40px;
+    height: 40px;
+}
+
+.fb:hover {
+    background: #3b5998;
+}
+
+.twitter:hover {
+    background: #4099FF;
+}
+
+.linkedin:hover {
+    background: #007bb6;
 }
