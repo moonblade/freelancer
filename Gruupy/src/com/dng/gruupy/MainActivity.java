@@ -83,7 +83,9 @@ public class MainActivity extends ActionBarActivity implements
 	EditText usname, upwd;
 	int b;
 	Typeface face;
-	private static final String OUR_BUGSENSE_API_KEY = "ce69f2ee";
+//	private static final String OUR_BUGSENSE_API_KEY = "ce69f2ee";
+	private static final String OUR_BUGSENSE_API_KEY = "c0333529"; //jayadeep km
+	
 	Dialog login_dialog;
 	Boolean isInternetPresent = false;
 	ProgressDialog pd;
