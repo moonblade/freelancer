@@ -106,62 +106,66 @@
                 android:id="@+id/creator1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="1dp"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@+id/img_channel"
                 android:text="Saleam"
                 android:textColor="#400000"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                 />
 
             <TextView
                 android:id="@+id/text_name1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/creator1"
-                android:layout_marginLeft="1dp"
                 android:text="TextView"
                 android:textColor="@android:color/darker_gray"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:layout_alignLeft="@id/creator1"
+                 />
 
             <TextView
                 android:id="@+id/text_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/text_name1"
-                android:layout_marginLeft="1dp"
                 android:layout_toRightOf="@+id/img_channel"
                 android:text="Now"
                 android:textColor="@android:color/darker_gray"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:layout_alignLeft="@id/text_name1"
+                 />
 
             <TextView
                 android:id="@+id/upcoming"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/text_status"
-                android:layout_marginLeft="1dp"
                 android:layout_toRightOf="@+id/img_channel"
                 android:text="Next - Geometry 15Apr"
                 android:textColor="@android:color/darker_gray"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:layout_alignLeft="@id/text_name1" />
 
             <TextView
                 android:id="@+id/time_rem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/upcoming"
-                android:layout_marginLeft="1dp"
                 android:layout_toRightOf="@+id/img_channel"
                 android:text="Time - 15H30 "
                 android:textColor="@android:color/darker_gray"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:layout_alignLeft="@id/text_name1" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginBottom="8dp"
-                android:layout_below="@+id/time_rem" >
+                android:layout_below="@+id/time_rem"
+                android:layout_alignLeft="@id/details"
+                 >
 
                 <TextView
                     android:id="@+id/like_count"
@@ -171,7 +175,9 @@
                     android:layout_marginLeft="4dp"
                     android:text="256"
                     android:textColor="#F78224"
-                    android:textSize="15sp" />
+                    android:textSize="15sp" 
+                    android:layout_alignLeft="@id/details"
+                    />
 
                 <ImageView
                     android:id="@+id/llike"

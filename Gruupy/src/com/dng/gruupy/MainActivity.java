@@ -84,7 +84,7 @@ public class MainActivity extends ActionBarActivity implements
 	int b;
 	Typeface face;
 //	private static final String OUR_BUGSENSE_API_KEY = "ce69f2ee";
-	private static final String OUR_BUGSENSE_API_KEY = "c0333529"; //jayadeep km
+	private static final String OUR_BUGSENSE_API_KEY = "53daf3d7"; //saleam
 	
 	Dialog login_dialog;
 	Boolean isInternetPresent = false;

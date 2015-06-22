@@ -103,7 +103,8 @@
                 android:paddingBottom="10dp"
                 android:paddingLeft="5dp"
                 android:paddingTop="10dp"
-                android:textColor="#000" />
+                android:textColor="#000" 
+                />
         </RelativeLayout>
 
         <RelativeLayout
@@ -122,21 +123,24 @@
                 android:text="Login"
                 android:textColor="#F78324"
                 android:textSize="23sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                 />
 
             <CheckBox
                 android:id="@+id/checkBox1r"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/login_bttn"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="6dp"
-                android:layout_marginTop="4dp"
                 android:button="@drawable/custom_selector"
+                android:paddingLeft="5dp"
+				android:layout_marginBottom="12dp"
                 android:text="Remember me"
-                android:paddingLeft="3dp"
                 android:textColor="#F78324"
                 android:textSize="21sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp" />
+
         </RelativeLayout>
     </LinearLayout>
 
