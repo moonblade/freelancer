@@ -427,9 +427,10 @@ public class RegistrationActivity extends Activity {
 			super.onPostExecute(result);
 			System.out.println("In posttttttttttttttttttttttt last");
 			final Editor editt = sprefs.edit();
-			if (status.equals("Success")) {
+			if (status.equals("Success")||true) {
 
-				if (resulted.equalsIgnoreCase(OTP)) {
+//				if (resulted.equalsIgnoreCase(OTP)) { //motp  disabled
+				if(true){
 					sdialog = new Dialog(RegistrationActivity.this,
 							android.R.style.Theme_Translucent_NoTitleBar);
 					sdialog.setContentView(R.layout.school_dialog);
@@ -483,43 +484,49 @@ public class RegistrationActivity extends Activity {
 		}
 
 		protected void getData() {
+//
+//			HttpClient httpclient = new DefaultHttpClient();
+//			ResponseHandler<String> res = new BasicResponseHandler();
+//			List<NameValuePair> pvt = new ArrayList<NameValuePair>();
+//			pvt.add(new BasicNameValuePair("private", private_key));
+//			Log.i("Namepairs", "" + pvt.toString());
+//			Log.i("Session ID", "" + sess_ID);
+//			HttpPost httppost = new HttpPost("http://api.mOTP.in/v1/OTP/"
+//					+ api_key + "/" + sess_ID);
+//			try {
+//				// Execute HTTP Post Request
+//				httppost.setEntity(new UrlEncodedFormEntity(pvt));
+//				String response = httpclient.execute(httppost, res);
+//
+//				System.out.println("--firstttttttt-------"
+//						+ response.toString());
+//				JSONObject js = new JSONObject(response);
+//				status = js.getString("Status");
+//				resulted = js.getString("Result");
+//				// id=job.getString("user_id");
+//				System.out.println("status======" + status);
+//				// SharedPreferences preferences =
+//				// getSharedPreferences("mprefs",
+//				// Context.MODE_PRIVATE);
+//				// Editor editor = preferences.edit();
+//				// editor.putString("id", id);
+//				// editor.commit();
+//				// System.out.println("--id in shr-------"+id);
+//			} catch (ClientProtocolException e) {
+//				System.out.println("ClientProtocolException--" + e);
+//			} catch (IOException e) {
+//				System.out.println("IOException--" + e);
+//			} catch (JSONException e) {
+//				e.printStackTrace();
+//			}
+			
 
-			HttpClient httpclient = new DefaultHttpClient();
-			ResponseHandler<String> res = new BasicResponseHandler();
-			List<NameValuePair> pvt = new ArrayList<NameValuePair>();
-			pvt.add(new BasicNameValuePair("private", private_key));
-			Log.i("Namepairs", "" + pvt.toString());
-			Log.i("Session ID", "" + sess_ID);
-			HttpPost httppost = new HttpPost("http://api.mOTP.in/v1/OTP/"
-					+ api_key + "/" + sess_ID);
-			try {
-				// Execute HTTP Post Request
-				httppost.setEntity(new UrlEncodedFormEntity(pvt));
-				String response = httpclient.execute(httppost, res);
-
-				System.out.println("--firstttttttt-------"
-						+ response.toString());
-				JSONObject js = new JSONObject(response);
-				status = js.getString("Status");
-				resulted = js.getString("Result");
-				// id=job.getString("user_id");
-				System.out.println("status======" + status);
-				// SharedPreferences preferences =
-				// getSharedPreferences("mprefs",
-				// Context.MODE_PRIVATE);
-				// Editor editor = preferences.edit();
-				// editor.putString("id", id);
-				// editor.commit();
-				// System.out.println("--id in shr-------"+id);
-			} catch (ClientProtocolException e) {
-				System.out.println("ClientProtocolException--" + e);
-			} catch (IOException e) {
-				System.out.println("IOException--" + e);
-			} catch (JSONException e) {
-				e.printStackTrace();
-			}
-
+			status = "success";
+			resulted = "1234";
+			Log.d("here","undeeeee");
+//motp disabled
 		}
+			
 	}
 
 	//
@@ -612,9 +619,12 @@ public class RegistrationActivity extends Activity {
 									}
 								}
 							});
-							dbox.show();
+							//dbox.show(); //no dialog
+							GetData dl = new GetData();
+							dl.execute();
+							//executes here
 						}
-				}, 12000);
+				}, 1000);
 
 			} else {
 				Toast.makeText(RegistrationActivity.this,
@@ -626,37 +636,42 @@ public class RegistrationActivity extends Activity {
 
 	// --------------Register on mOTP-------//
 	protected void getRegister() {
-		// Toast.makeText(RegistrationActivity.this, "Please wait...",
-		// Toast.LENGTH_LONG).show();
-		DefaultHttpClient dehtt = new DefaultHttpClient();
-		ResponseHandler<String> res = new BasicResponseHandler();
-		String phonewithisd = "" + countryCode.getText().toString() + ""
-				+ phoneNo.getText().toString();
-		Log.e("countrycode", "" + countryCode.getText().toString());
-		Log.e("phonewithisd", "" + phonewithisd);
-		HttpPost postMethod = new HttpPost("http://api.mOTP.in/v1/" + api_key
-				+ "/" + phonewithisd);
-
-		try {
-			String respage = "";
-			respage = dehtt.execute(postMethod, res);
-			Log.e("Login response from the server-", "" + respage);
-			JSONObject job = new JSONObject(respage);
-			String status = job.getString("Status");
-			// String result="";
-
-			if (status.equalsIgnoreCase("Success")) {
-				L_status = "true";
-				sess_ID = job.getString("Result");
-			} else if (respage.equals(null)) {
-				L_status = "false";
-			} else {
-				L_status = "false";
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		Log.i("Result", "" + L_status);
+//		// Toast.makeText(RegistrationActivity.this, "Please wait...",
+//		// Toast.LENGTH_LONG).show();
+//		DefaultHttpClient dehtt = new DefaultHttpClient();
+//		ResponseHandler<String> res = new BasicResponseHandler();
+//		String phonewithisd = "" + countryCode.getText().toString() + ""
+//				+ phoneNo.getText().toString();
+//		Log.e("countrycode", "" + countryCode.getText().toString());
+//		Log.e("phonewithisd", "" + phonewithisd);
+//		HttpPost postMethod = new HttpPost("http://api.mOTP.in/v1/" + api_key
+//				+ "/" + phonewithisd);
+//
+//		try {
+//			String respage = "";
+//			respage = dehtt.execute(postMethod, res);
+//			Log.e("Login response from the server-", "" + respage);
+//			JSONObject job = new JSONObject(respage);
+//			String status = job.getString("Status");
+//			// String result="";
+//
+//			if (status.equalsIgnoreCase("Success")) {
+//				L_status = "true";
+//				sess_ID = job.getString("Result");
+//			} else if (respage.equals(null)) {
+//				L_status = "false";
+//			} else {
+//				L_status = "false";
+//			}
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//		Log.i("Result", "" + L_status);
+		
+		//motp disabled
+		
+		sess_ID="12345";
+		L_status="true";
 	}
 
 	public class Loc_reg extends AsyncTask<Void, Void, String> {
